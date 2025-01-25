@@ -1,0 +1,159 @@
+@font-face {
+    font-family: myFont;
+    src: url(Designer.otf);
+}
+.portfolio-container{min-height:100vh;
+width:100%;
+display : flex;
+}
+.navlist{
+    display: flex;
+    gap:3.5rem;
+    height:15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:aliceblue;
+    position: relative ;
+    
+}
+.left-container, .right-container{
+    height:100vh;
+    display: flex;
+    align-items:center;
+}
+.left-container{
+    background:#262525;
+    WIDTH:70%;
+    padding-left:3rem;
+
+}
+.right-container{
+    background: linear-gradient(-45deg,#3877FF,#262525 70%);
+    width:30%;
+}
+.icons .fa-brands{
+    color:antiquewhite;
+    font-size:1.7rem;
+}
+    .icons .fa-regular{
+        color:antiquewhite;
+        font-size:1.7rem;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2.8rem;
+    }
+    .content{
+        margin-left: 4rem;
+    }
+    .content .intro {
+        font-size:1.5rem;
+        color:bisque;
+    }
+    .content .intro span{
+        color:#5DB9EE;
+    }
+      
+    .content h1{
+        font-size:4rem;
+        color:#5DB9EE;
+    }
+    .content .detail{
+        font-size: 1.1rem;
+        color: #FFF;
+        max-width: 38rem;
+        margin: 1.1rem 0 3rem 0;
+        line-height: 1.8rem;
+    }
+    .btn-container button{
+        border: .1rem solid #5DB9EE;
+        font-size: 1.1rem;
+        padding: .8rem 1.5rem;
+        border-radius: .5rem;
+        cursor:pointer;
+        transition:.5s ease;
+    }
+    button:nth-child(1){
+        background: #5DB9EE;
+        color:#262525;
+    }
+    button:nth-child(2){
+        background: transparent;
+        color: #5DB9EE;
+        margin-left:2rem;
+    }
+button:nth-child(1):hover{
+background : transparent;
+color: #5DB9EE;
+}
+button:nth-child(2):hover{
+    background : #5DB9EE;
+    color: #262525;
+    }
+    .icons .fa-brands :hover{
+        cursor: pointer;
+        background: linear-gradient(#FFF,#5DB9EE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .design .circle{
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left:70%;
+        transform: translate(-50%, -50%);
+
+    }
+    .circle:nth-child(1){
+        background:linear-gradient(90deg, transparent 50%,#262525 50%);
+width:35rem;
+    }
+    .circle:nth-child(2){
+        background:whitesmoke;
+        width:30rem;
+        background-image: url("image/8a9b5433-1f22-430e-8a66-8be50bda24fd.jpg");
+        background-size: 100%;
+        background-repeat : no-repeat;
+        border: .1rem solid #FFF;
+        box-shadow:
+        0 0 1rem #FFF,
+     inset 0 0 1rem #FFF,
+     0 0 2rem #3877FF,
+     inset 0 0 2rem #3877FF,
+        0 0 4rem #3877FF,
+        inset 0 0 4rem #3877FF;
+    }
+    .navlist li a::after, .navlist .active::after{
+        content:"";
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: .1rem;
+        left: 0;
+        bottom: -5px;
+        transform: scalex(0);
+        transition: transform .5s;
+
+    }
+    .navlist li a:hover::after, .navlist .active::after{
+        transform:scaleX(1);
+    }
+    h2{
+            color:#fff;
+    }
+    a{
+        color:#fff; 
+    }
